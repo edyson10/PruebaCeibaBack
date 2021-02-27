@@ -11,23 +11,23 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "persona")
-public class Persona implements Serializable {
+public class Person implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	private String nombre;
 	private String apellido;
 	private String cedula;
 	private Date fecha_nacimiento;
 	
-	public Persona() {
+	public Person() {
 		
 	}
 
-	public Persona(String nombre, String apellido, String cedula, Date fecha_nacimiento) {
+	public Person(String nombre, String apellido, String cedula, Date fecha_nacimiento) {
 		super();
 		this.nombre = nombre;
 		this.apellido = apellido;
