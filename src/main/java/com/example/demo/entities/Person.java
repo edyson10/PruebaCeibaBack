@@ -21,13 +21,13 @@ public class Person implements Serializable {
 	private String nombre;
 	private String apellido;
 	private String cedula;
-	private Date fecha_nacimiento;
+	private String fecha_nacimiento;
 	
 	public Person() {
 		
 	}
 
-	public Person(String nombre, String apellido, String cedula, Date fecha_nacimiento) {
+	public Person(String nombre, String apellido, String cedula, String fecha_nacimiento) {
 		super();
 		this.nombre = nombre;
 		this.apellido = apellido;
@@ -67,11 +67,11 @@ public class Person implements Serializable {
 		this.cedula = cedula;
 	}
 
-	public Date getFecha_nacimiento() {
+	public String getFecha_nacimiento() {
 		return fecha_nacimiento;
 	}
 
-	public void setFecha_nacimiento(Date fecha_nacimiento) {
+	public void setFecha_nacimiento(String fecha_nacimiento) {
 		this.fecha_nacimiento = fecha_nacimiento;
 	}
 
